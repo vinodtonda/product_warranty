@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Warranty</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <!--- collapse -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Register
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/addcustomer.html">Register Customer</a>
+                            <a class="dropdown-item" href="/addproduct.html">Register Product</a>
+        
+        
+                        </div>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            View
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="/viewcustomer.html">View Customer Info</a>
+                            <a class="dropdown-item" href="/viewproduct.html">View product Info</a>
+        
+        
+                        </div>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Warranty
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="/warrantyrequest.html">Warranty Request</a>
+          
+                        </div>
+                    </li>
+        
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Validate
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="/validate.html">Validate</a>
+         
+                        </div>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Diagnosis
+                        </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="/diagnosis.html">Diagnosis product</a>
+         
+                        </div>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Process
+                            </a>
+                            <div class="dropdown-menu">
+                                
+                                <a class="dropdown-item" href="/postprocess.html">Process</a>
+             
+                            </div>
+                        </li>
+        
+        
+        
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    replacement
+                                </a>
+                                <div class="dropdown-menu">
+                                    
+                                    <a class="dropdown-item" href="/replacement.html">Process</a>
+                 
+                                </div>
+                            </li>
+            
+        
+        
+        
+        
+                </ul>
+            </nav>
+    <div class="container">
+        <h1>validate the product</h1>
+
+        <hr>
+
+        <label for="productid">
+            <b> Product Id</b>
+        </label>
+        <input type="text" placeholder="Enter product id" name="productid" id="productid" required>
+        <br>
+
+
+        <label for="check">
+            <b> Are the warranty and customer data correct?</b>
+        </label><br>
+        <input type="radio" name="warrantycheck" value="0" checked> NO<br>
+  <input type="radio" name="warrantycheck" value="1"> Yes<br>
+  
+        <br>
+
+        <label for="fixtime">
+            <b> Estimated time to fix</b>
+        </label>
+        <input type="text" placeholder="Enter no. of days" name="fixtime" id="fixtime" required>
+        <br>
+
+        <br>
+
+        <div class="clearfix">
+
+            <button id="addcompany" onclick="App.addProduct()">Submit</button>
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+    <br>
+    <span id="status"></span>
+    <br>
+    <span class="hint">
+
+        <strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+
+
+
+
+</body>
+
+</html>
